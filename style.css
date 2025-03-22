@@ -46,6 +46,32 @@ a {
 
 }
 
+h2 {
+    display: block;
+    font-size: 1.5em;
+    margin-block-start: 0.83em;
+    margin-block-end: 0px;
+    font-weight: bold;
+    unicode-bidi: isolate;
+}
+
+.btn {
+    background-color: #6415ff;
+    padding: 12px 32px;
+    border: none;
+    border-radius: 500px;
+    font-size: 14px;
+    color: #fff;
+    font-weight: bold;
+    transition: all 300ms;
+    margin: 32px 0 0;
+}
+
+img {
+    overflow-clip-margin: content-box;
+    overflow: clip;
+    width: 100%;
+}
 
 /* 
 
@@ -312,6 +338,67 @@ FEATURES ↓
     align-items: center;
 }
 
+.row__narrow {
+    width: 100%;
+    max-width: 1024px;
+    margin: 0 auto;
+}
+
+.section__tag {
+    font-size: 16px;
+}
+
+.section__title {
+    font-size: 48px;
+    font-weight: 900;
+    margin: 16px 0;
+}
+
+.section__para {
+    font-size: 18px;
+    font-weight: 500;
+    color: #7c8ba1;
+    line-height: 1.625;
+}
+
+.features {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 40px;
+}
+
+.feature {
+    display: flex;
+    margin: 0 auto;
+}
+
+.feature__row {
+    display: flex;
+    align-items: flex-start;
+    padding: 32px 24px;
+
+}
+
+.feature__img-wrapper {
+    width: 100px;
+    height: 100px;
+    border: solid black 2px;
+    border-radius: 500px;
+}
+
+.feature__title {
+    font-size: 32px;
+    padding: 0 0 20px 10px;
+}
+
+.feature__para {
+    margin-top: 16px;
+    font-size: 16px;
+    max-width: calc(634px / 3);
+    color: rgb(124, 139, 161);
+    line-height: 2;
+    font-weight: 500;
+}
 
 /* 
 
@@ -324,6 +411,34 @@ QUALITY WORK ↓
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+
+.row {
+    width: 100%;
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+.quality__description, .quality__img--wrapper {
+    width: 50%;
+}
+
+.quality__description {
+    padding: 0 64px 0 0;
+}
+
+.quality__img--wrapper {
+    border-radius: 4px;
+    border: 1px solid rgb(229, 231, 235);
+    position: relative;
+    margin: 0 56px;
+    z-index: 2;
+    display: flex
+;
+}
+
+.quality__img {
+    width: 100%;
 }
 
 
@@ -340,6 +455,57 @@ STEPS ↓
     align-items: center;
 }
 
+.steps__description,
+.steps__img--wrapper {
+    width: 50%;
+}
+
+.steps__description {
+    padding: 32px 0 32px 64px;
+}
+
+.steps__img--wrapper {
+    margin: 0 56px;
+}
+
+.steps__img {
+    z-index: 2;
+}
+
+.step {
+    display: flex;
+    margin: 32px 0 0;
+}
+
+.step__number {
+    color: #cbd5e0;
+    font-size: 36px;
+    font-weight: 600;
+    line-height: 1;
+}
+
+.step__description {
+    display: flex;
+    flex-direction: column;
+    margin-left: 24px;
+    max-width: 320px;
+}
+
+.step__title {
+    font-weight: 600;
+    font-size: 20px;
+    color: #243e63;
+    line-height: 1;
+}
+
+.step__para {
+    font-size: 14px;
+    color: #716096;
+    margin-top: 12px;
+    font-weight: 500;
+    line-height: 2;
+}
+
 
 /* 
 
@@ -353,6 +519,67 @@ VALUES ↓
     align-items: center;
 }
 
+.values__description, .values__img {
+    width: 50%;
+}
+
+.values__description {
+    padding: 32px 64px 32px 0;
+}
+
+.values__list {
+    display: flex;
+}
+
+.value {
+    margin: 32px 0;
+}
+
+.value__title {
+    display: flex;
+    align-items: center;
+}
+
+.value__name {
+    margin-left: 12px;
+    font-size: 20px;
+    font-weight: bold;
+    color: #243e63;
+}
+
+.value:nth-child(1) .value__img--wrapper {
+    background-color: #9ae6b4;
+}
+
+.value:nth-child(2) .value__img--wrapper {
+    background-color: #feb2b2;
+}
+
+.value__img--wrapper {
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.value__img--wrapper {
+    width: 36px;
+    height: 36px;
+    display: flex
+;
+}
+
+
+.value__img {
+    width: 20px;
+    height: 20px;
+}
+
+.value__para {
+    margin-top: 16px;
+    line-height: 1.625;
+    color: #718096;
+}
 
 /*
 
@@ -365,6 +592,16 @@ PRICING ↓
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+
+.plan:nth-child(1) .plan__stripe, .plan:nth-child(1) .plan__button {
+    color: #f7fafc;
+    background: linear-gradient(115deg, rgb(56, 178, 172) 0%, rgb(129, 230, 217) 100%);
+}
+
+#pricing .section__para {
+    max-width: 576px;
+    text-align: center;
 }
 
 /* 
